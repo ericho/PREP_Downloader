@@ -23,7 +23,7 @@ class prep_downloader:
         self.id_contador = '1'
         self.archivo = open("prep_antifraude.csv", "wb")
         self.archivo_csv = csv.writer(self.archivo)
-        self.archivo_csv.writerow(["Fuente", "Imagen", "Entidad", "Municipio", "Distrito", "Seccion", "Tipo de casilla", "PAN", "PRI", "PRD", "VERDE", "MOV", "PANAL", "PRI_VERDE", "PRD_PT_MOV", "PRD_PT", "PRD_MOV", "PT_MOV", "No registrados", "Nulos"])
+        self.archivo_csv.writerow(["Fuente", "Imagen", "Entidad", "Municipio", "Distrito", "Seccion", "Tipo de casilla", "PAN", "PRI", "PRD", "VERDE", "PT", "MOV", "PANAL", "PRI_VERDE", "PRD_PT_MOV", "PRD_PT", "PRD_MOV", "PT_MOV", "No registrados", "Nulos"])
         
         
     def solicitar_datos(self, id_cont):
